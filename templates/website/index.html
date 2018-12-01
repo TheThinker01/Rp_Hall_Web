@@ -1,0 +1,597 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>RP Hall</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+    {% load staticfiles %}
+	<link href="{% static 'website/css/bootstrap-responsive.css' %}" rel="stylesheet">
+	<link href="{% static 'website/css/style.css' %}" rel="stylesheet">
+	<link href="{% static 'website/color/default.css' %}" rel="stylesheet">
+	<link rel="shortcut icon" href="{% static 'website/img/favicon.ico' %}">
+	<!-- =======================================================
+    Theme Name: Maxim
+    Theme URL: https://bootstrapmade.com/maxim-free-onepage-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+	======================================================= -->
+</head>
+
+<body>
+	<!-- navbar -->
+	<div class="navbar-wrapper">
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<!-- Responsive navbar -->
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</a>
+					<h1 class="brand"><a href="index.html">Rajendra Prasad Hall<br>Of<br>Residence</a></h1>
+					<!-- navigation -->
+					<nav class="pull-right nav-collapse collapse">
+						<ul id="menu-main" class="nav">
+							<li><a title="team" href="#about">About</a></li>
+                            <li><a title="notice_board" href="#Notice_board">Notice Board</a></li>
+							<li><a title="services" href="#services">Links</a></li>
+							<li><a title="works" href="#works">Gallery</a></li>
+							<li><a title="contact" href="#contact">Contact</a></li>
+
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Header area -->
+	<div id="header-wrapper" class="header-slider">
+		<header class="clearfix">
+			<div class="logo">
+				<img id="logo1" src="{% static 'website/img/iitkgpLogo.png' %}" alt="" />
+			</div><br>
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<div id="main-flexslider" class="flexslider">
+							<ul class="slides">
+								<li>
+									<p class="home-slide-content">
+										<strong>creativity</strong> and passion
+									</p>
+								</li>
+								<li>
+									<p class="home-slide-content">
+										 <strong>Innovation</strong> is what we love
+									</p>
+								</li>
+								<li>
+									<p class="home-slide-content">
+										We love <strong>simplicity</strong>
+									</p>
+								</li>
+							</ul>
+						</div>
+						<!-- end slider -->
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+	<!-- spacer section -->
+	<section class="spacer green">
+		<div class="container">
+			<div class="row">
+				<div class="span6 alignright flyLeft">
+					<blockquote class="large">
+						This hall is named the Rajendra Prasad Hall of Residence in gratitude and admiration for the dedication and sacrifice with which Dr. Rajendra Prasad, the first president of the Republic of India, has served his country <cite>RP Hall's Plaque</cite>
+					</blockquote>
+				</div>
+				<div class="span6 aligncenter flyRight"><br><br>
+					<div class="imgicon"><img class="img_rajendra" src="{% static 'website/img/Rajendra_Prasadpic.jpg' %}"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end spacer section -->
+	<!-- section: team -->
+	<section id="about" class="section">
+		<div class="container">
+			<h4>Who We Are-The RPians</h4>
+			<div class="row">
+				<div class="span4 offset1">
+					<div>
+						<h2 style="color: white; font-family: 'Open Sans',X-LocaleSpecific,sans-serif "><strong>We live with creativity</strong></h2>
+						<p style="color: white; font-family: 'Open Sans',X-LocaleSpecific,sans-serif;color: seashell;font-size: 14px">
+							<strong>We are the residents of the Rajendra Prasad Hall of Residence, known as RP Hall, one of the oldest halls of residence at Indian Institute of Technology, Kharagpur. It is named after Rajendra Prasad, the first president of the Republic of India. RP Hall is the second largest undergraduate hall of residence, in terms of size and boarder strength, and was the largest until LBS was converted into an undergraduate-only hall in 2014.</strong>
+						</p>
+					</div>
+				</div>
+				<div class="span6">
+					<div class="aligncenter">
+						<img src="{% static 'website/img/icons/creativity.png' %}" alt="" />
+					</div>
+				</div>
+			</div>
+           </div>
+    </section>
+
+    <section id="Hall_council" class="HC_section">
+            <div class="mydivider1" style="background-image: url('{% static 'website/img/svg/curve-features-top.6f18a86e68c2.svg' %}')"></div>
+            <div class="container"><br>
+            <div class="divider-hall"><strong><h4 style="font-size: 48px; color:#306efe "><span style="padding-bottom: 2px;border-bottom: 3px solid;line-height: 2">Our Hall Council<span></span></h4></strong></div>
+			<div class="row">
+				<div class="span3 offset2 flyIn">
+					<div class="people">
+                        <img class="team-thumb img-circle" src="{% static 'website/img/team/img-1.jpg' %}" alt="" />
+						<h2 class="teamimg">Prof. Uday Shankar</h2>
+						<p class="teampost">
+							Warden
+						</p>
+					</div>
+				</div>
+				<div class="span2 flyIn">
+					<div class="people">
+						<img class="team-thumb img-circle" src="{% static 'website/img/team/img-2.jpg' %}" alt="" />
+						<h2 class="teamimg">Prof. Somenath Ganguly </h2>
+						<p class="teampost">
+							Assistant Warden(Mess)
+						</p>
+					</div>
+				</div>
+				<div class="span3 flyIn">
+					<div class="people">
+						<img class="team-thumb img-circle" src="{% static 'website/img/team/img-3.jpg' %}" alt="" />
+						<h2 class="teamimg">Prof. Kuttippurath Jayanarayanan</h2>
+						<p class="teampost">
+							Assistant Warden(Maintenance)
+						</p>
+					</div>
+				</div>
+            </div>
+            <div class="row">
+				<div class="span2 offset1 flyIn">
+					<div class="people">
+						<img class="team-thumb img-circle" src="{% static 'website/img/team/img-4.jpg' %}" alt="" />
+						<h2 class="teamimg">Utsav Mazumder</h2>
+						<p class="teampost">
+							Hall President
+						</p>
+					</div>
+				</div>
+				<div class="span2 flyIn">
+					<div class="people">
+						<img class="team-thumb img-circle" src="{% static 'website/img/team/img-5.jpg' %}" alt="" />
+						<h2 class="teamimg">Ankit Chahar</h2>
+						<p class="teampost">
+							Second Senate Member
+						</p>
+					</div>
+				</div>
+                <div class="span2 flyIn">
+					<div class="people">
+						<img class="team-thumb img-circle" src="{% static 'website/img/team/img-6.jpg' %}" alt="" />
+						<h2 class="teamimg" >Parikshit Soni</h2>
+						<p class="teampost">
+							Computer Room and Network Secretary
+						</p>
+					</div>
+				</div>
+                  <div class="span2 flyIn">
+					<div class="people">
+						<img class="team-thumb img-circle" src="{% static 'website/img/team/img-7.jpg' %}" alt="" />
+						<h2 class="teamimg">Sourabh Jyoti Borah</h2>
+						<p class="teampost">
+							Library Secretary
+						</p>
+					</div>
+				</div>
+                <div class="span1 flyIn">
+					<div class="people">
+
+
+						<h2 class="teamimg"></h2>
+                        <p>
+                            </p>
+
+					</div>
+				</div>
+                 <div class="span2 flyIn">
+					<div class="people">
+						<br><br><br>
+    <!-- add link to the hall council page here -->
+                        <a href="">
+						<h4 class="teamimg moreinfo">More
+                        <br> . . . .</h4>
+
+						</a>
+					</div>
+				</div>
+			</div>
+          </div>
+
+        </section>
+
+
+		<!-- /.container -->
+
+	<!-- end section: team -->
+    <!-- begin : Notice Board -->
+    <section id="Notice_board" class="NB_section">
+       <div class="mydivider2" style="background-image: url('{% static 'website/img/svg/curve-highlights-top.68c13f4f61be.svg' %}')"></div>
+       <div class="NB_heading"><h1 style="font-size: 50px"><span style="color: white;padding-bottom: 2px;border-bottom: 3px solid;line-height: 2">NOTICE BOARD</span></h1></div>
+    </section>
+	<!-- section: services -->
+	<section id="services" class="section orange">
+        <!-- <div class="mydivider3"></div> -->
+		<div class="container">
+			<h4><span style="color: white;padding-bottom: 2px;border-bottom: 3px solid;line-height: 2">Links</span></h4>
+			<!-- Four columns -->
+			<div class="row">
+				<div class="span3 animated-fast flyIn">
+					<div class="service-box">
+						<img class="row-illu" src="{% static 'website/img/icons/illumination.jpg' %}" alt="" />
+						<h2>Illumination &amp; Rangoli</h2>
+						<p>
+							Take a look at what makes RP Hall a continuing gold winner in Illumination &amp; Rangoli
+						</p>
+					</div>
+				</div>
+				<div class="span3 animated flyIn">
+					<div class="service-box">
+						<img class="row-illu" src="{% static 'website/img/icons/gc.jpg' %}" alt="" />
+						<h2>General Championship</h2>
+						<p>
+							Have a peek at RP Halls glorious history in GC
+						</p>
+					</div>
+				</div>
+				<div class="span3 animated-fast flyIn">
+					<div class="service-box">
+						<img class="row-alumni" src="{% static 'website/img/icons/alumni.jpg' %}" alt="" />
+						<h2>Alumni Network</h2>
+						<p>
+							Information about RP Hall's rich alumni network
+						</p>
+					</div>
+				</div>
+				<div class="span3 animated-slow flyIn">
+					<div class="service-box">
+						<img class="row-contacts" src="{% static 'website/img/icons/Contacts.png' %}" alt="" />
+						<h2>Contacts</h2>
+						<p>
+							Here are the contacts in case you need them
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end section: services -->
+	<!-- section: works -->
+	<section id="works" class="section">
+		<div class="container clearfix">
+			<h4>Our Works</h4>
+			<!-- portfolio filter -->
+			<div class="row">
+				<div id="filters" class="span12">
+					<ul class="clearfix">
+						<li>
+							<a href="#" data-filter="*" class="active">
+								<h5>All</h5>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-filter=".web">
+								<h5>Web</h5>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-filter=".print">
+								<h5>Print</h5>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-filter=".design">
+								<h5>Design</h5>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-filter=".photography">
+								<h5>Photography</h5>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- END PORTFOLIO FILTERING -->
+			</div>
+			<div class="row">
+				<div class="span12">
+					<div id="portfolio-wrap">
+						<!-- portfolio item -->
+						<div class="portfolio-item grid print photography">
+							<div class="portfolio">
+								<a href="{% static 'website/img/works/big.jpg' %}" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
+						<img src="{% static 'website/img/works/1.png' %}" alt="" />
+						<div class="portfolio-overlay">
+							<div class="thumb-info">
+								<h5>Portfolio name</h5>
+								<i class="icon-plus icon-2x"></i>
+							</div>
+						</div>
+						</a>
+							</div>
+						</div>
+						<!-- end portfolio item -->
+						<!-- portfolio item -->
+						<div class="portfolio-item grid print design web">
+							<div class="portfolio">
+								<a href="{% static 'website/img/works/big.jpg' %}" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
+						<img src="{% static 'website/img/works/2.png' %}" alt="" />
+						<div class="portfolio-overlay">
+							<div class="thumb-info">
+								<h5>Portfolio name</h5>
+								<i class="icon-plus icon-2x"></i>
+							</div>
+						</div>
+						</a>
+							</div>
+						</div>
+						<!-- end portfolio item -->
+						<!-- portfolio item -->
+						<div class="portfolio-item grid print design">
+							<div class="portfolio">
+								<a href="{% static 'website/img/works/big.jpg' %}" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
+						<img src="{% static 'website/img/works/3.png' %}" alt="" />
+						<div class="portfolio-overlay">
+							<div class="thumb-info">
+								<h5>Portfolio name</h5>
+								<i class="icon-plus icon-2x"></i>
+							</div>
+						</div>
+						</a>
+							</div>
+						</div>
+						<!-- end portfolio item -->
+						<!-- portfolio item -->
+						<div class="portfolio-item grid photography web">
+							<div class="portfolio">
+								<a href="{% static 'website/img/works/big.jpg' %}" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
+						<img src="{% static 'website/img/works/4.png' %}" alt="" />
+						<div class="portfolio-overlay">
+							<div class="thumb-info">
+								<h5>Portfolio name</h5>
+								<i class="icon-plus icon-2x"></i>
+							</div>
+						</div>
+						</a>
+							</div>
+						</div>
+						<!-- end portfolio item -->
+						<!-- portfolio item -->
+						<div class="portfolio-item grid photography web">
+							<div class="portfolio">
+								<a href="{% static 'website/img/works/big.jpg' %}" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
+						<img src="{% static 'website/img/works/5.png' %}" alt="" />
+						<div class="portfolio-overlay">
+							<div class="thumb-info">
+								<h5>Portfolio name</h5>
+								<i class="icon-plus icon-2x"></i>
+							</div>
+						</div>
+						</a>
+							</div>
+						</div>
+						<!-- end portfolio item -->
+						<!-- portfolio item -->
+						<div class="portfolio-item grid photography web">
+							<div class="portfolio">
+								<a href="{% static 'website/img/works/big.jpg' %}" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
+						<img src="{% static 'website/img/works/6.png' %}" alt="" />
+						<div class="portfolio-overlay">
+							<div class="thumb-info">
+								<h5>Portfolio name</h5>
+								<i class="icon-plus icon-2x"></i>
+							</div>
+						</div>
+						</a>
+							</div>
+						</div>
+						<!-- end portfolio item -->
+						<!-- portfolio item -->
+						<div class="portfolio-item grid photography web">
+							<div class="portfolio">
+								<a href="{% static 'website/img/works/big.jpg' %}" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
+						<img src="{% static 'website/img/works/7.png' %}" alt="" />
+						<div class="portfolio-overlay">
+							<div class="thumb-info">
+								<h5>Portfolio name</h5>
+								<i class="icon-plus icon-2x"></i>
+							</div>
+						</div>
+						</a>
+							</div>
+						</div>
+						<!-- end portfolio item -->
+						<!-- portfolio item -->
+						<div class="portfolio-item grid photography">
+							<div class="portfolio">
+								<a href="{% static 'website/img/works/big.jpg' %}" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
+						<img src="{% static 'website/img/works/8.png' %}" alt="" />
+						<div class="portfolio-overlay">
+							<div class="thumb-info">
+								<h5>Portfolio name</h5>
+								<i class="icon-plus icon-2x"></i>
+							</div>
+						</div>
+						</a>
+							</div>
+						</div>
+						<!-- end portfolio item -->
+						<!-- portfolio item -->
+						<div class="portfolio-item grid photography web">
+							<div class="portfolio">
+								<a href="{% static 'website/img/works/big.jpg' %}" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
+						<img src="{% static 'website/img/works/9.png' %}" alt="" />
+						<div class="portfolio-overlay">
+							<div class="thumb-info">
+								<h5>Portfolio name</h5>
+								<i class="icon-plus icon-2x"></i>
+							</div>
+						</div>
+						</a>
+							</div>
+						</div>
+						<!-- end portfolio item -->
+						<!-- portfolio item -->
+						<div class="portfolio-item grid design web">
+							<div class="portfolio">
+								<a href="{% static 'website/img/works/big.jpg' %}" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
+						<img src="{% static 'website/img/works/10.png' %}" alt="" />
+						<div class="portfolio-overlay">
+							<div class="thumb-info">
+								<h5>Portfolio name</h5>
+								<i class="icon-plus icon-2x"></i>
+							</div>
+						</div>
+						</a>
+							</div>
+						</div>
+						<!-- end portfolio item -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- spacer section -->
+	<section class="spacer bg3">
+		<div class="container">
+			<div class="row">
+				<div class="span12 aligncenter flyLeft">
+					<blockquote class="large">
+						Here in the place of that Hijli Detention Camp stands the fine monument of India, representing India's urges, India's future in the making. This picture seems to me symbolical of the changes that are coming to India
+                        <cite>Pandit Jawaharlal Nehru at the first convocation address at IIT Kharagpur in 1956</cite>
+					</blockquote>
+				</div>
+				<div class="span12 aligncenter flyRight">
+					<i class="icon-rocket icon-10x"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end spacer section -->
+
+
+	<!-- end spacer section -->
+	<!-- section: contact -->
+	<section id="contact" class="section green">
+		<div class="container">
+			<h4>Get in Touch</h4>
+			<p>
+				Need Some Help? Have a complain? Feel free to contact Us.
+			</p>
+			<div class="blankdivider30">
+			</div>
+			<div class="row">
+				<div class="span12">
+					<div class="cform" id="contact-form">
+						<div id="sendmessage">Your message has been sent. Thank you!</div>
+						<div id="errormessage"></div>
+						<form action="" method="post" role="form" class="contactForm">
+							<div class="row">
+								<div class="span6">
+									<div class="field your-name form-group">
+										<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+										<div class="validation"></div>
+									</div>
+									<div class="field your-email form-group">
+										<input type="text" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+										<div class="validation"></div>
+									</div>
+									<div class="field subject form-group">
+										<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+										<div class="validation"></div>
+									</div>
+								</div>
+								<div class="span6">
+									<div class="field message form-group">
+										<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+										<div class="validation"></div>
+									</div>
+									<input type="submit" value="Send message" class="btn btn-theme pull-left">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- ./span12 -->
+			</div>
+		</div>
+	</section>
+
+	<footer>
+
+		<div class="container">
+            <div class="row">
+                <div class="span5 offset1 footer_contact">
+                    <p style="font-size: 30px;color: white"><b>Contact : :</b></p>
+
+                    <p style="font-size: 20px;color: #b7290a"><b>Rajendra Prasad Hall Of Residence</b></p>
+
+                    <p style="font-size: 20px;color: white">IIT Kharagpur Campus,<br> New Bitumen Road,<br> Kharagpur,<br>West Bengal-721302.</p>
+
+                </div>
+                <div class="span2 footer_links">
+                    <p style="font-size: 30px;color: white">Links::</p>
+                    <ul>
+                    <li><a href="#about">About</a></li>
+                     <li><a href="">Notice Board</a></li>
+                    <li><a href="#works">Gallery</a></li>
+                    <li><a href="">Illumination &amp; Rangoli</a></li>
+                    <li><a href="">General Championship</a></li>
+                    <li><a href="">Contact Us</a></li>
+
+                    </ul>
+                </div>
+                <div class="span3">
+                    <img id="footer_logoiit" src="{% static 'website/img/kgp-logowhite.png' %}">
+                </div>
+            </div>
+			<div class="row">
+				<div class="span6 offset3">
+					<ul class="social-networks">
+						<li><a href="#"><i class="icon-circled icon-bgdark icon-instagram icon-2x"></i></a></li>
+						<li><a href="#"><i class="icon-circled icon-bgdark icon-twitter icon-2x"></i></a></li>
+						<li><a href="#"><i class="icon-circled icon-bgdark icon-dribbble icon-2x"></i></a></li>
+						<li><a href="#"><i class="icon-circled icon-bgdark icon-pinterest icon-2x"></i></a></li>
+					</ul>
+
+						<div class="credits">
+							Designed and Maintained By RP HALL WEB TEAM
+						</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- ./container -->
+
+	</footer>
+	<a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bgdark icon-2x"></i></a>
+	<script src="{% static 'website/js/jquery.js' %}"></script>
+	<script src="{% static 'website/js/jquery.scrollTo.js' %}"></script>
+	<script src="{% static 'website/js/jquery.nav.js' %}"></script>
+	<script src="{% static 'website/js/jquery.localScroll.js' %}"></script>
+	<script src="{% static 'website/js/bootstrap.js' %}"></script>
+	<script src="{% static 'website/js/jquery.prettyPhoto.js' %}"></script>
+	<script src="{% static 'website/js/isotope.js' %}"></script>
+	<script src="{% static 'website/js/jquery.flexslider.js' %}"></script>
+	<script src="{% static 'website/js/inview.js' %}"></script>
+	<script src="{% static 'website/js/animate.js' %}"></script>
+	<script src="{% static 'website/js/custom.js' %}"></script>
+	<script src="{% static 'website/contactform/contactform.js' %}"></script>
+
+</body>
+
+</html>
