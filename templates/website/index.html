@@ -22,6 +22,11 @@
 
 <body>
 	<!-- navbar -->
+    {# redirecting to a paarticular art of the home page #}
+    	{#% if appis %#}
+            <!--<script> window.location.hash = '#contact'; </script> -->
+        {#% endif %#}
+
 	<div class="navbar-wrapper">
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="navbar-inner">
@@ -495,29 +500,59 @@
 			</div>
 			<div class="row">
 				<div class="span12">
-					<div class="cform" id="contact-form">
+					<div class="cform" id="contact-form" >
+						{% if appis == 1 %}
 						<div id="sendmessage">Your message has been sent. Thank you!</div>
-						<div id="errormessage"></div>
-						<form action="" method="post" role="form" class="contactForm">
-							<div class="row">
+                        {% endif %}
+						<form action="{% url 'feedback' %}" method="post" role="form" class="contactForm">
+							{% csrf_token %}
+                            <div class="row">
 								<div class="span6">
 									<div class="field your-name form-group">
+                                         {% if form.name.errors %}
+                                            {% for error in form.name.errors %}
+                                            <div class="alert alert-danger">
+                                             <strong>{{ error|escape }}</strong>
+                                            </div>
+                                            {% endfor %}
+                                        {% endif %}
 										<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-										<div class="validation"></div>
 									</div>
 									<div class="field your-email form-group">
-										<input type="text" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-										<div class="validation"></div>
+										 {% if form.email.errors %}
+                                            {% for error in form.email.errors %}
+                                            <div class="alert alert-danger">
+                                             <strong>{{ error|escape }}</strong>
+                                            </div>
+                                            {% endfor %}
+                                        {% endif %}
+                                        <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+
+
 									</div>
 									<div class="field subject form-group">
-										<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-										<div class="validation"></div>
+										{% if form.subject.errors %}
+                                            {% for error in form.subject.errors %}
+                                            <div class="alert alert-danger">
+                                             <strong>{{ error|escape }}</strong>
+                                            </div>
+                                            {% endfor %}
+                                        {% endif %}
+                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+
 									</div>
 								</div>
 								<div class="span6">
 									<div class="field message form-group">
-										<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-										<div class="validation"></div>
+										{% if form.message.errors %}
+                                            {% for error in form.message.errors %}
+                                            <div class="alert alert-danger">
+                                             <strong>{{ error|escape }}</strong>
+                                            </div>
+                                            {% endfor %}
+                                        {% endif %}
+                                        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+
 									</div>
 									<input type="submit" value="Send message" class="btn btn-theme pull-left">
 								</div>
@@ -527,6 +562,7 @@
 				</div>
 				<!-- ./span12 -->
 			</div>
+
 		</div>
 	</section>
 
@@ -590,7 +626,7 @@
 	<script src="{% static 'website/js/inview.js' %}"></script>
 	<script src="{% static 'website/js/animate.js' %}"></script>
 	<script src="{% static 'website/js/custom.js' %}"></script>
-	<script src="{% static 'website/contactform/contactform.js' %}"></script>
+	<!--<script src="{% comment %}{% static 'website/contactform/contactform.js' %}{% endcomment %}"></script> -->
 
 </body>
 
