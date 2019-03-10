@@ -7,6 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
+    {% if appis %}
+            <script> window.location.hash = '#quote'; </script>
+    {% endif %}
     {% load staticfiles %}
 	<link href="{% static 'website/css/bootstrap-responsive.css' %}" rel="stylesheet">
 	<link href="{% static 'website/css/style.css' %}" rel="stylesheet">
@@ -22,10 +25,8 @@
 
 <body>
 	<!-- navbar -->
-    {# redirecting to a paarticular art of the home page #}
-    	{#% if appis %#}
-            <!--<script> window.location.hash = '#contact'; </script> -->
-        {#% endif %#}
+    {# redirecting to a particular part of the home page #}
+
 
 	<div class="navbar-wrapper">
 		<div class="navbar navbar-inverse navbar-fixed-top">
@@ -470,7 +471,7 @@
 		</div>
 	</section>
 	<!-- spacer section -->
-	<section class="spacer bg3">
+	<section class="spacer bg3" id="quote">
 		<div class="container">
 			<div class="row">
 				<div class="span12 aligncenter flyLeft">
@@ -501,10 +502,12 @@
 			<div class="row">
 				<div class="span12">
 					<div class="cform" id="contact-form" >
-						{% if appis == 1 %}
-						<div id="sendmessage">Your message has been sent. Thank you!</div>
+						{% if form.is_valid %}
+						<div class="alert alert-success">
+                               <strong>Your message has been sent. Thank you!</strong>
+                        </div>
                         {% endif %}
-						<form action="{% url 'feedback' %}" method="post" role="form" class="contactForm">
+						<form action="" method="post" role="form" class="contactForm">
 							{% csrf_token %}
                             <div class="row">
 								<div class="span6">

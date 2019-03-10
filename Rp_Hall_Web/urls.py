@@ -21,6 +21,6 @@ from website import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='website'),
-    path('feedback', views.get_feedback, name='feedback'),
+    # path('', views.get_feedback, name='feedback'),
 
 ]
